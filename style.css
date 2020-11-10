@@ -196,6 +196,14 @@ body {
 	padding: 30px 120px 78px;
 }
 
+.about_content2 .txt {
+	font-size: 17px;
+	color: #ff7b00;
+	line-height: 27px;
+	margin: 0;
+	padding: 30px 120px 78px;
+}
+
 /*Funções do bot*/
 
 .func {
