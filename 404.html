@@ -25,6 +25,15 @@
 <meta property="og:type" content="website">
 
 <body>
+
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
 	<header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -82,6 +91,11 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+	<script>
+		$(window).on("load",function(){
+          $(".spinner-wrapper").fadeOut("slow");
+        });
+	</script>
 </body>
 
 </html>
