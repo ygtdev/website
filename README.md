@@ -1,2 +1,1 @@
-# ygtdev.xyz
-My new website.
+# ygtdev.js.org
