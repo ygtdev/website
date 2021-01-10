@@ -3491,3 +3491,23 @@ h6 {
   font-style: italic;
   color: #96a2a7;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #06090f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #06090f;
+}
