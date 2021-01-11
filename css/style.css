@@ -236,6 +236,8 @@ button:focus {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
         color: #4458dc; }
+        .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.game .nav-link {
+          color: #FF8824; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
