@@ -1,1 +1,1 @@
-# ygtdev.xyz
+# ygtdev.js.org
