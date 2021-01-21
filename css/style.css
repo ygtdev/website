@@ -41,6 +41,13 @@ h6 {
   font-family: 'Lexend Deca', sans-serif;
  }
 
+audio {
+  color: #0066ff;
+  position: fixed;
+  top: 520px;
+  right: 808px;
+}
+
 .title {
   color: #fff;
   position: fixed;
