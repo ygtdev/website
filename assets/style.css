@@ -17,16 +17,15 @@ h1 {
 
 h5 {
   color: #535353;
-  text-align: center;
-  margin-top: 16.1%;
+  float: left;
+  padding-left: 4%;
   font-family: 'Lexend Deca', sans-serif;
 }
 
 .widget {
-  display: flex;
-  justify-content: center;
-  margin-top: 360px;
-  margin-left: -70%;
+	float: left;
+	padding-top: 18%;
+  padding-left: 4%;
 }
 
 .social-text {
@@ -39,29 +38,28 @@ h5 {
 .soci-bt {
 	margin-left: 1px;
 	font-size: 15px;
-	float: left;
 	background-color: transparent;
 	color: white;
 	border-radius: 5px;
 	margin-right: 5px;
 	margin-bottom: 8px;
-  text-decoration: none;
+  	text-decoration: none;
 	-webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -moz-transform: scale(1);
-  transition: all .2s ease-in;
-  -moz-transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  -ms-transition: all .2s ease-in;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  	transition: all .2s ease-in;
+  	-moz-transition: all .2s ease-in;
+  	-webkit-transition: all .2s ease-in;
+  	-ms-transition: all .2s ease-in;
 }
 
 .soci-bt:hover {
 	text-decoration: none;
 	color: white;
 	-webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);  
-  -moz-transform: scale(1.2);
-  transform: scale(1.2);
+  	-ms-transform: scale(1.2);  
+  	-moz-transform: scale(1.2);
+  	transform: scale(1.2);
 }
 
 .loader {
