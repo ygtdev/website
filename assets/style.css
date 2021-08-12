@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,500,600,700,800");
+
+body{
+  font-family: "Titillium Web", sans-serif;
+  background-color: #121212;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+  color: #535353;
+  text-align: center;
+  margin-top: 16.1%;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.widget {
+  display: flex;
+  justify-content: center;
+  margin-top: 360px;
+  margin-left: -70%;
+}
+
+.social-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: -84%;
+}
+
+.soci-bt {
+	margin-left: 1px;
+	font-size: 15px;
+	float: left;
+	background-color: transparent;
+	color: white;
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+  text-decoration: none;
+	-webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+}
+
+.soci-bt:hover {
+	text-decoration: none;
+	color: white;
+	-webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);  
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.loader {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #121212;
+}

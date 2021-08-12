@@ -1,10 +1,10 @@
 body {
-  background: #081421;
+  background: #121212;
   color: #d3d7de;
   font-family: "Courier new";
   font-size: 18px;
   line-height: 1.5em;
-cursor: default;
+  cursor: default;
 }
 
 a {

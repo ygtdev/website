@@ -7,9 +7,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="https://cdn.discordapp.com/attachments/767882860992397323/836395980189859850/favicon.png" type="image/png">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
 </head>
 
 <meta property="og:title" content="YGT Development">
@@ -23,39 +24,74 @@
 
 <body>
 
-<div>
-	<div class="loader"></div>
-</div>
-
-<header>
 	<div>
-		<div class="dairesel"></div>
-    </div>
-</header>
-
-<section>
-	<div class="title">
-		<p>Hello World, I'm <strong>COOL</strong></p>
+		<div class="loader"></div>
 	</div>
-</section>
-
-<article>
+	
 	<div>
-		<a class="button discord" href="https://discord.gg/CCExrpU" target="_blank"><i class="fab fa-discord"></i> Discord</a>
-		<a class="button api" href="https://api.ygtdev.xyz" target="_blank"><i class="fas fa-book"></i> API</a>
-		<a class="button github" href="https://github.com/ygtdev" target="_blank"><i class="fab fa-github"></i> Github</a>
+		<div class="widget">
+			<iframe id="widDiscord" src="https://lanyard-profile-readme.vercel.app/api/150612752610754560?theme=dark&animated=true&bg=252525&borderRadius=10px" width="410" height="210" allowtransparency="true" frameborder="0" sandbox="allow-popups"></iframe>
+		</div>
+		<div class="social-text">
+			<a id="sociDiscord" class="soci-bt" href="https://discord.com/users/150612752610754560" target="_blank"><i class="fab fa-discord text-gray-200"></i></a>
+			<a id="sociGithub" class="soci-bt" href="https://github.com/ygtdev" target="_blank"><i class="fab fa-github text-gray-200"></i></a>
+			<a id="sociYoutube" class="soci-bt" href="https://www.youtube.com/channel/UCiI6D8jKc51hfD-1YnpcFSw" target="_blank"><i class="fab fa-youtube text-gray-200"></i></a>
+			<a id="sociSpotify" class="soci-bt" href="https://open.spotify.com/user/21vwplhnoyw5iav2kibidsosi" target="_blank"><i class="fab fa-spotify text-gray-200"></i></a>
+			<a id="sociMail" class="soci-bt" href="yigitgurses2012@gmail.com" target="_blank"><i class="fa fa-envelope text-gray-200"></i></a>
+		</div>
 	</div>
-</article>
+
+	<h5>© design & code by <strong>COOL</strong>, 2021</h5>
 
     <script src="https://kit.fontawesome.com/45676346c8.js" crossorigin="anonymous"></script>
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="assets/jquery-3.2.1.min.js"></script>
+	<script src="assets/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+	<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
 	<script>
 		$(window).on("load",function(){
           $(".loader").fadeOut("slow");
         });
 	</script>
-
+    <script>
+		tippy('#widDiscord', {
+    		content: 'Discord Profile',
+    		arrow: true,
+    		animation: 'scale',
+		});
+		tippy('#sociDiscord', {
+    		content: 'Discord Profile',
+    		arrow: true,
+    		animation: 'scale',
+			placement: 'bottom',
+		});
+		tippy('#sociGithub', {
+			content: 'GitHub Profile',
+    		arrow: true,
+    		animation: 'scale',
+			placement: 'bottom',
+		});
+		tippy('#sociYoutube', {
+			content: 'YouTube Profile',
+    		arrow: true,
+    		animation: 'scale',
+			placement: 'bottom',
+		});
+		tippy('#sociSpotify', {
+			content: 'Spotify Profile',
+    		arrow: true,
+    		animation: 'scale',
+			placement: 'bottom',
+		});
+		tippy('#sociMail', {
+			content: 'cool@ygtdev.xyz',
+    		arrow: true,
+    		animation: 'scale',
+			placement: 'bottom',
+		});
+	  </script>
 </body>
 
 </html>
