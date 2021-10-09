@@ -108,3 +108,9 @@ h5 {
   	-moz-transform: scale(1.02);
   	transform: scale(1.02);
 }
+
+#discord-widget {
+	float: right;
+	padding-top: 9.5%;
+  	padding-right: 1%;
+}
