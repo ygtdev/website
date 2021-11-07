@@ -54,7 +54,6 @@ function update_presence() {
                                         <img class="rounded-md spotify-content-img" src="${album_art_url}">
                                     </div>
                                     `;
-
     } else {
         spotifyContent.innerHTML = `
                                     <div id="spotifyContentText" class="text-x1 description-color">
