@@ -9,7 +9,7 @@ app.innerHTML = `<main class="flex-grow md:flex">
                         <div class="w-full text-left">
                             <div class="font-bold text-3xl main-text-color">COOL#7673</div>
                             <div class="font-normal text-x1 description-color">
-                                I'm a 16 year old developer, student & designer.
+                                I'm a 16 y/o developer, student & designer.
                             </div>
                             <div class="mt-2 mr-10 font-semibold text-sm">
                                 <a href="https://github.com/ygtdev" target="_blank" class="mt-2 mr-4 inline-block social-button-color social-button">
