@@ -28,6 +28,8 @@ html {
 }
 
 .bg-color {
+    background-size: cover;
+    backdrop-filter: blur(10px);
     background-color: var(--bg-color);
 }
 
