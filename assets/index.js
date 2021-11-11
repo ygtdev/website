@@ -1,6 +1,10 @@
 var app = document.getElementById("app")
 
-app.innerHTML = `<main class="flex-grow md:flex">
+app.innerHTML = `<div>
+                    <div class="loader"></div>
+                </div>
+
+                <main class="flex-grow md:flex">
                     <div class="absolute p-16 inset-0 flex items-center">
                         <div class="navbar py-2 px-3">
                             <a id="theme-button" class="navbar-item rounded-full mr-1 social-button-color"><i class="fas fa-sun"></i></a>
@@ -30,6 +34,10 @@ app.innerHTML = `<main class="flex-grow md:flex">
                     </div>
                 </main>
                 `
+
+$(window).on("load",function(){
+    $(".loader").fadeOut("slow");
+});
 
 var themeButton = document.getElementById("theme-button")
 themeButton.onclick = function(){

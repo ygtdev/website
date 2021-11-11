@@ -56,6 +56,16 @@ html {
 	color: #fff;
 }
 
+.loader {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: var(--bg-color);
+}
+
 :root {
     --bg-color: #000;
     --main-text-color: #fff;
