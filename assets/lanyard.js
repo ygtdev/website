@@ -64,6 +64,7 @@ function update_presence() {
                                         <img class="rounded-md spotify-content-img" src="https://cdn.dont-ping.me/api/😴🦕👻🤘🤖.png">
                                     </div>
                                     `;
+        $(".bg-color").css("background-image", "transparent");
     }
 
     if (api.d.discord_status === "dnd") {

@@ -7,7 +7,7 @@ app.innerHTML = `<div>
                 <main class="flex-grow md:flex">
                     <div class="absolute p-16 inset-0 flex items-center">
                         <div class="navbar py-2 px-3">
-                            <a id="theme-button" class="navbar-item rounded-full mr-1 social-button-color"><i class="fab fa-bitcoin"></i></a>
+                            <a id="theme-button" class="navbar-item rounded-full mr-1 social-button-color" href="cripto.html" target="_blank"><i class="fab fa-bitcoin"></i></a>
                             <a class="navbar-item rounded mr-1 social-button-color" href="https://repeatpay.ga/cool" target="_blank"><i class="fas fa-donate"></i></a>
                         </div>
                         <div class="w-full text-left">
@@ -38,8 +38,3 @@ app.innerHTML = `<div>
 $(window).on("load",function(){
     $(".loader").fadeOut("slow");
 });
-
-var themeButton = document.getElementById("theme-button")
-themeButton.onclick = function(){
-    alert("Theme switching is temporarily disabled.");
-}
