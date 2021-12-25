@@ -10,6 +10,7 @@ app.innerHTML = `<div>
                             <a id="theme-button" class="navbar-item rounded-full mr-1 social-button-color" href="cripto.html" target="_blank"><i class="fab fa-bitcoin"></i></a>
                             <a class="navbar-item rounded mr-1 social-button-color" href="https://repeatpay.ga/cool" target="_blank"><i class="fas fa-donate"></i></a>
                         </div>
+                        
                         <div class="w-full text-left">
                             <div class="font-bold text-3xl main-text-color">COOL#7673</div>
                             <div class="font-normal text-x1 description-color">

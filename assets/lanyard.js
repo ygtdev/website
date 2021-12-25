@@ -1,18 +1,16 @@
 var statusIcon = document.getElementById("statusIcon");
 var discordContent = document.getElementById("discordContent");
-
 const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
-
 var api = {};
 var received = false;
 
 lanyard.onopen = function () {
     lanyard.send(
         JSON.stringify({
-        op: 2,
-        d: {
-            subscribe_to_id: "150612752610754560",
-        },
+            op: 2,
+            d: {
+                subscribe_to_id: "150612752610754560",
+            },
         })
     );
 };
@@ -48,10 +46,10 @@ function update_presence() {
         
         spotifyContent.innerHTML = `
                                     <div id="spotifyContentText" class="text-x1 description-color">
-                                        <i class="fab fa-spotify text-green-500 ml-1 mr-1"></i> ${song} by ${artist}
+                                        <i class="fab fa-spotify text-green-500 ml-1 mr-1"></i>Listening ${song} by ${artist}
                                     </div>
                                     <div id="spotifyContentImg" class="mt-2">
-                                        <img class="rounded-md spotify-content-img" src="${album_art_url}">
+                                        <img class="rounded-lg spotify-content-img" src="${album_art_url}">
                                     </div>
                                     `;
         $(".bg-color").css("background-image", "url(" + album_art_url + ")");
@@ -61,7 +59,7 @@ function update_presence() {
                                         <i class="fab fa-spotify text-green-500 ml-1 mr-1"></i> Not listening to anything
                                     </div>
                                     <div id="spotifyContentImg" class="mt-2">
-                                        <img class="rounded-md spotify-content-img" src="https://cdn.dont-ping.me/api/😴🦕👻🤘🤖.png">
+                                        <img class="rounded-lg spotify-content-img" src="https://cdn.dont-ping.me/api/😴🦕👻🤘🤖.png">
                                     </div>
                                     `;
         $(".bg-color").css("background-image", "transparent");
