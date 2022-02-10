@@ -52,7 +52,6 @@ function update_presence() {
                                         <img class="rounded-lg spotify-content-img" src="${album_art_url}">
                                     </div>
                                     `;
-        $(".bg-color").css("background-image", "url(" + album_art_url + ")");
     } else {
         spotifyContent.innerHTML = `
                                     <div id="spotifyContentText" class="text-x1 description-color">
@@ -62,7 +61,6 @@ function update_presence() {
                                         <img class="rounded-lg spotify-content-img" src="https://cdn.dont-ping.me/api/😴🦕👻🤘🤖.png">
                                     </div>
                                     `;
-        $(".bg-color").css("background-image", "transparent");
     }
 
     if (api.d.discord_status === "dnd") {
