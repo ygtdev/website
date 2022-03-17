@@ -12,7 +12,7 @@ app.innerHTML = `<div>
                         </div>
                         
                         <div class="w-full text-left">
-                            <div class="font-bold text-3xl main-text-color">COOL#7673</div>
+                            <div class="font-bold text-3xl main-text-color">COOL#0356</div>
                             <div class="font-normal text-x1 description-color">
                                 Hi there! I'm developer, student & designer.
                             </div>
@@ -21,7 +21,7 @@ app.innerHTML = `<div>
                                     <i class="fab fa-github mr-1"></i>ygtdev
                                 </a>
                                 <a href="https://discord.com/users/150612752610754560" target="_blank" class="mt-2 mr-4 inline-block social-button-color social-button">
-                                    <i class="fab fa-discord mr-1"></i>COOL#7673
+                                    <i class="fab fa-discord mr-1"></i>COOL#0356
                                 </a>
                                 <a href="https://open.spotify.com/user/21vwplhnoyw5iav2kibidsosi" target="_blank" class="mt-2 mr-4 inline-block social-button-color social-button">
                                     <i class="fab fa-spotify mr-1"></i>COOL
