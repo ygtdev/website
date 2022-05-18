@@ -84,7 +84,7 @@ updatePresence = function() {
                                 <i class="fab fa-spotify ${retval.api.d.listening_to_spotify ? 'text-green-500' : 'text-gray-500'} ml-1 mr-1"></i><a href="${statusData.spotify.songUrl}" target="_blank" class="hover:underline">${statusData.spotify.status}</a>
                             </div>
                             <div class="mx-1 my-2 h-1 w-full rounded-lg bg-white/40">
-                                <div class="bg-white rounded-lg h-full" style="width: ${statusData.spotify.trackerPercentage()};"></div>
+                                <div class="bg-white rounded-lg h-full" style="width: ${retval.api.d.listening_to_spotify ? statusData.spotify.trackerPercentage() : '0%'};"></div>
                             </div>
                         </div>
                     </div>
