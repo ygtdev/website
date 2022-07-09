@@ -1,26 +1,34 @@
 const app = Vue.createApp({
     data() {
         return {
-            loaded: false,
-            date: '',
-            user: {}
+            lanyardReady: false,
+            time: '',
+            userData: {}
         }
+    },
+    created() {
+        this.updateData();
+        console.log('%c COOL#0356', 'font-size: 2rem;');
     },
     watch: {
-        user(newValue, oldValue) {
-            this.loaded = true;
-        }
-      },
-    computed: {
-        statusIcon() {
-            return this.user.status == 'Çevrimiçi' ? 'bg-green-400' : this.user.status == 'Boşta' ? 'bg-yellow-600' : this.user.status == 'Rahatsız Etmeyin' ? 'bg-red-500' : 'bg-gray-400'
+        userData(newValue, oldValue) {
+            this.lanyardReady = true;
         },
-        statusText() {
-            return this.user.status == 'Çevrimiçi' ? 'text-green-400' : this.user.status == 'Boşta' ? 'text-yellow-600' : this.user.status == 'Rahatsız Etmeyin' ? 'text-red-500' : 'text-gray-400'
+    },
+    computed: {
+        timeIcon() {
+            let hour = moment().format('h')
+            return hour < 9 ? 'fa-bed' : 9 <= hour < 19 ? 'fa-graduation-cap' : 'fa-computer'
+        },
+        statusIconColor() {
+            return this.userData.status == 'Online' ? 'bg-green-400' : this.userData.status == 'Idle' ? 'bg-yellow-500' : this.userData.status == 'Do Not Disturb' ? 'bg-red-400' : 'bg-gray-500'
+        },
+        statusTextColor() {
+            return this.userData.status == 'Online' ? 'text-green-400' : this.userData.status == 'Idle' ? 'text-yellow-500' : this.userData.status == 'Do Not Disturb' ? 'text-red-400' : 'text-gray-500'
         }
     },
-    methods:{
-        updateData: function() {
+    methods: {
+        updateData() {
             const lanyard = new WebSocket('wss://api.lanyard.rest/socket');
             let api
     
@@ -40,20 +48,29 @@ const app = Vue.createApp({
             };
 
             setInterval(() => {
-                this.date = moment().format('Do MMMM YYYY • h:mm:ss A')
-                this.user = {
+                this.time = moment().format('Do MMMM YYYY • h:mm:ss A');
+                this.userData = {
                     username: api.d.discord_user.username,
                     tag: api.d.discord_user.discriminator,
-                    status: api.d.discord_status == 'online' ? 'Çevrimiçi' : api.d.discord_status == 'idle' ? 'Boşta' : api.d.discord_status == 'dnd' ? 'Rahatsız Etmeyin' : 'Görünmez',
+                    status: api.d.discord_status == 'online' ? 'Online' : api.d.discord_status == 'idle' ? 'Idle' : api.d.discord_status == 'dnd' ? 'Do Not Disturb' : 'Invisible',
                     avatar: `https://cdn.discordapp.com/avatars/${api.d.discord_user.id}/${api.d.discord_user.avatar}.${
                         api.d.discord_user.avatar?.startsWith('a_') ? 'gif' : 'png'
                     }?size=512` || 'Bilinmiyor',
-                }
-                console.log(this.user)
+                };
             }, 1000)
-        },
+        }
     },
-    created () {
-        this.updateData()
-    }
-}).mount('#app')
+}).mount('#app');
+
+tippy('#discordStatus', {
+    content: 'Discord Status',
+});
+
+tippy('#currentActivity', {
+    content: 'Current Activity',
+});
+
+tippy('#myHeart', {
+    theme: 'gradient',
+    content: 'It\'s Only My Heart',
+});
