@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "date": "2022-07-25",
+        "category": "Eğlence",
+        "image": "https://cdn.discordapp.com/attachments/693624858323583026/799041112492474398/250x250.png",
+        "label": "Anan 0",
+        "content": "Ananın amı 0."
+    },
+    {
+        "id": 1,
+        "date": "2022-07-22",
+        "category": "Eğlence",
+        "image": "https://cdn.discordapp.com/attachments/693624858323583026/799041112492474398/250x250.png",
+        "label": "Anan 1",
+        "content": "Ananın amı 1."
+    },
+    {
+        "id": 2,
+        "date": "2022-07-21",
+        "category": "Eğlence",
+        "image": "https://cdn.discordapp.com/attachments/693624858323583026/799041112492474398/250x250.png",
+        "label": "Anan 2",
+        "content": "Ananın amı 2."
+    },
+    {
+        "id": 3,
+        "date": "2022-07-20",
+        "category": "Eğlence",
+        "image": "https://cdn.discordapp.com/attachments/693624858323583026/799041112492474398/250x250.png",
+        "label": "Anan 3",
+        "content": "Ananın amı 3."
+    },
+    {
+        "id": 4,
+        "date": "2022-07-15",
+        "category": "Teknoloji",
+        "image": "https://cdn.discordapp.com/attachments/693624858323583026/799041112492474398/250x250.png",
+        "label": "Anan 4",
+        "content": "Ananın amı 4."
+    }
+]
