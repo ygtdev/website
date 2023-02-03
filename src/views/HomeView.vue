@@ -1,102 +1,199 @@
 <template>
-    <header class="flex items-center justify-between gap-4 p-6 bg-secondary-500 rounded-xl">
-        <div class="flex flex-col gap-2 flex-1">
-            <h1 class="text-4xl font-bold">COOL#0356</h1>
-            <p>Hello World! I'm Yigit. I am 17 years old and I am studying at High School in Turkey. I spend most of my time playing games and improving the games I play. I usually develop projects using <x-link color="primary" href="https://vuejs.org/" target="_blank">Vue.js</x-link> + <x-link color="primary" href="https://tailwindcss.com/" target="_blank">TailwindCSS</x-link>.</p>
-        </div>
-    </header>
-    <section class="flex flex-col gap-2">
-        <h1 class="text-xl font-semibold">Activity</h1>
-        <div class="flex items-center gap-3 p-3 rounded-xl font-medium bg-secondary-500">
-            <img src="/activity.png" alt="Activity Image" class="h-24 w-24 rounded-lg">
-            <div class="w-full flex flex-col gap-2">
-                <div class="leading-3">
-                    <h1 class="text-lg font-bold">Disney+</h1>
-                    <span class="text-sm">Watching The Punishe.</span>
-                </div>
-                <div class="flex flex-col gap-0.5">
-                    <div class="flex items-center justify-between text-xs">
-                        <span>18:51</span>
-                        <span>56:34</span>
-                    </div>
-                    <x-progress :percentage="50" color="primary"/>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="flex flex-col gap-2">
-        <h1 class="text-xl font-semibold">Technologies</h1>
-        <div class="flex flex-wrap justify-center gap-2 p-2 rounded-xl font-medium border border-secondary-500">
-            <div class="flex items-center gap-1.5 py-2 px-3 bg-secondary-500 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#dd4b25" class="flex-shrink-0 h-5 w-5">
-                    <path d="M64 32l34.94 403.21L255.77 480 413 435.15 448 32zm308 132H188l4 51h176l-13.51 151.39L256 394.48l-98.68-28-6.78-77.48h48.26l3.42 39.29L256 343.07l53.42-14.92L315 264H148l-12.59-149.59H376.2z"></path>
-                </svg>
-                HTML5
-            </div>
-            <div class="flex items-center gap-1.5 py-2 px-3 bg-secondary-500 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon flex-shrink-0 h-5 w-5 rounded-lg" viewBox="0 0 128 128">
-                    <path fill="#1572B6" d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path>
-                    <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path>
-                    <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"></path>
-                    <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path>
-                    <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z"></path>
-                    <path fill="#EBEBEB" d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
-                </svg>
-                CSS3
-            </div>
-            <div class="flex items-center gap-1.5 py-2 px-3 bg-secondary-500 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#EFD81D" class="flex-shrink-0 h-5 w-5 rounded-sm">
-                    <path d="M0 0v512h512V0H0zm274.286 397.714c0 49.84-29.44 74.137-72.057 74.137-38.492 0-60.835-19.931-72.172-43.988l39.177-23.714c7.555 13.405 13.292 24.742 29.783 24.742 13.714 0 24.983-6.182 24.983-30.24V237.714h50.286v160zm113.543 72.995c-44.675 0-73.543-20.16-87.635-48L339.429 400c10.285 16.846 23.714 28.069 47.428 28.069 19.932 0 31.509-8.823 31.509-22.572 0-16.491-11.92-22.331-33.92-32l-12.023-5.166c-34.72-14.765-57.737-33.325-57.737-72.514 0-36.08 27.485-62.434 70.445-62.434 30.595 0 52.572 9.508 68.4 37.348L416 294.857c-8.251-14.777-17.143-20.571-30.926-20.571-14.091 0-23.028 8.937-23.028 20.571 0 14.434 8.937 20.274 29.554 29.212l12.023 5.154c40.903 17.531 63.931 35.428 63.931 75.611.012 43.315-34.011 65.875-79.725 65.875z"></path>
-                </svg>
-                JavaScript
-            </div>
-            <div class="flex items-center gap-1.5 py-2 px-3 bg-secondary-500 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="flex-shrink-0 h-5 w-5">
-                    <path d="M256 144.03l-55.49-96.11h-79.43L256 281.61 390.92 47.92h-79.43L256 144.03z" fill="#35495E"></path>
-                    <path d="M409.4 47.92L256 313.61 102.6 47.92H15.74L256 464.08 496.26 47.92H409.4z" fill="#41B883"></path>
-                </svg>
-                Vue.js
-            </div>
-            <div class="flex items-center gap-1.5 py-2 px-3 bg-secondary-500 rounded-lg">
-                <svg class="flex-shrink-0 h-5 w-5" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M55.7498 27.1551C52.5277 21.615 44.4723 21.6149 41.2502 27.1551L6.13404 87.5346C2.91191 93.0748 6.93956 100 13.3838 100H40.7975C38.0438 97.5934 37.0241 93.4303 39.1079 89.8584L65.7033 44.2694L55.7498 27.1551Z" fill="#80EEC0"></path>
-                    <path d="M78.0002 40.3997C80.6668 35.8668 87.3332 35.8668 89.9998 40.3997L119.061 89.801C121.728 94.3339 118.395 100 113.062 100H54.9383C49.6052 100 46.2719 94.3339 48.9385 89.801L78.0002 40.3997Z" fill="#00DC82"></path>
-                </svg>
-                Nuxt.js
-            </div>
-            <div class="flex items-center gap-1.5 py-2 px-3 bg-secondary-500 rounded-lg">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.333 9.933C7.088 6.911 8.978 5.4 12 5.4c4.533 0 5.1 3.4 7.367 3.967 1.511.377 2.833-.189 3.966-1.7-.755 3.022-2.644 4.533-5.666 4.533-4.534 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.967 1.7zm-5.666 6.8C1.422 13.711 3.31 12.2 6.333 12.2c4.534 0 5.1 3.4 7.367 3.967 1.51.377 2.833-.19 3.967-1.7C16.91 17.489 15.022 19 12 19c-4.533 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.966 1.7z" fill="url(#prefix__paint0_linear)"></path>
-                    <defs>
-                        <linearGradient id="prefix__paint0_linear" x1=".667" y1="-6.689" x2="23.333" y2="31.089" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2383AE"></stop>
-                            <stop offset="1" stop-color="#6DD7B9"></stop>
-                        </linearGradient>
-                    </defs>
-                </svg>
-                TailwindCSS
-            </div>
-        </div>
-    </section>
-    <section class="flex flex-col gap-2">
-        <h1 class="text-xl font-semibold">Pinned Repositories</h1>
-        <div class="grid grid-cols-2 gap-2 font-medium">
-            <a href="https://github.com/ygtdev/website" target="_blank" class="flex flex-col gap-1 py-3 px-4 bg-secondary-500 rounded-lg">
-                <h1>website</h1>
-                <p class="text-sm text-tertiary-700">👽 Source codes of my personal website.</p>
-            </a>
-            <a href="https://github.com/ygtdev/ygtdev" target="_blank" class="flex flex-col gap-1 py-3 px-4 bg-secondary-500 rounded-lg">
-                <h1>ygtdev</h1>
-                <p class="text-sm text-tertiary-700">🥳 Hi there! I'm developer, student & designer.</p>
-            </a>
-            <a href="https://github.com/ygtdev/ygt-warehouse" target="_blank" class="flex flex-col gap-1 py-3 px-4 bg-secondary-500 rounded-lg">
-                <h1>ygt-warehouse</h1>
-                <p class="text-sm text-tertiary-700">🏠 Warehouse system for QBCore</p>
-            </a>
-            <a href="https://github.com/ygtdev/api" target="_blank" class="flex flex-col gap-1 py-3 px-4 bg-secondary-500 rounded-lg">
-                <h1>api</h1>
-                <p class="text-sm text-tertiary-700">🔧 Open source API system.</p>
-            </a>
-        </div>
-    </section>
+	<div>
+		<div class="inline-grid gap-3">
+			<div class="flex items-center gap-2">
+				<div class="relative h-12 w-12 rounded-full bg-cover bg-[url(/logo.png)]">
+					<div class="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-green-400 ring-2 ring-slate-900"></div>
+					<div v-tippy="{
+						content: 'Online'
+					}" class="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-green-400 animate-ping cursor-pointer"></div>
+				</div>
+				<div>
+					<h1 class="leading-none text-lg text-white/80 font-semibold">COOL</h1>
+					<h1 class="leading-none text-xs text-white/50">#0356</h1>
+				</div>
+			</div>
+			<h1 class="text-5xl text-white/80 font-bold">
+				<span class="text-[#94a3b8]">Hi There,</span>
+				I’m Yigit ✌️
+			</h1>
+			<p class="text-white/60 font-medium">
+				Hello World! I'm Yigit. I am 17 and I am studying at High School in Turkey. I spend most of my time playing games and coding some stuff.
+			</p>
+		</div>
+		<div class="mt-8 p-5 flex items-center gap-4 rounded-2xl bg-slate-800">
+			<div class="h-24 w-24 rounded-lg bg-cover bg-[url(/activity.png)]"></div>
+			<div class="flex-1">
+				<h1 class="text-xl text-white/80 font-bold">Disney+</h1>
+				<p class="text-white/60">Watching The Punisher.</p>
+				<div class="mt-1">
+					<div class="flex justify-between">
+						<h1 class="text-xs text-white/40 font-medium">18:51</h1>
+						<h1 class="text-xs text-white/40 font-medium">56:34</h1>
+					</div>
+					<div class="mt-0.5 h-2 w-full rounded-full bg-slate-900/50">
+						<div class="h-full w-1/2 rounded-full bg-emerald-600"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<h1 class="text-3xl text-white/70 font-bold">Skills</h1>
+		<div class="mt-2 grid grid-cols-4 gap-2">
+			<div class="p-3 flex items-center gap-2 rounded-xl bg-slate-800">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#dd4b25" class="flex-shrink-0 h-5 w-5">
+					<path d="M64 32l34.94 403.21L255.77 480 413 435.15 448 32zm308 132H188l4 51h176l-13.51 151.39L256 394.48l-98.68-28-6.78-77.48h48.26l3.42 39.29L256 343.07l53.42-14.92L315 264H148l-12.59-149.59H376.2z"></path>
+				</svg>
+				<h1 class="text-white/60 font-semibold">HTML</h1>
+			</div>
+			<div class="p-3 flex items-center gap-2 rounded-xl bg-slate-800">
+				<svg xmlns="http://www.w3.org/2000/svg" class="ionicon flex-shrink-0 h-5 w-5 rounded-lg" viewBox="0 0 128 128">
+					<path fill="#1572B6" d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path>
+					<path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path>
+					<path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"></path>
+					<path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path>
+					<path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z"></path>
+					<path fill="#EBEBEB" d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
+				</svg>
+				<h1 class="text-white/60 font-semibold">CSS</h1>
+			</div>
+			<div class="p-3 flex items-center gap-2 rounded-xl bg-slate-800">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#EFD81D" class="flex-shrink-0 h-5 w-5 rounded">
+					<path d="M0 0v512h512V0H0zm274.286 397.714c0 49.84-29.44 74.137-72.057 74.137-38.492 0-60.835-19.931-72.172-43.988l39.177-23.714c7.555 13.405 13.292 24.742 29.783 24.742 13.714 0 24.983-6.182 24.983-30.24V237.714h50.286v160zm113.543 72.995c-44.675 0-73.543-20.16-87.635-48L339.429 400c10.285 16.846 23.714 28.069 47.428 28.069 19.932 0 31.509-8.823 31.509-22.572 0-16.491-11.92-22.331-33.92-32l-12.023-5.166c-34.72-14.765-57.737-33.325-57.737-72.514 0-36.08 27.485-62.434 70.445-62.434 30.595 0 52.572 9.508 68.4 37.348L416 294.857c-8.251-14.777-17.143-20.571-30.926-20.571-14.091 0-23.028 8.937-23.028 20.571 0 14.434 8.937 20.274 29.554 29.212l12.023 5.154c40.903 17.531 63.931 35.428 63.931 75.611.012 43.315-34.011 65.875-79.725 65.875z"></path>
+				</svg>
+				<h1 class="text-white/60 font-semibold">JavaScript</h1>
+			</div>
+			<div class="p-3 flex items-center gap-2 rounded-xl bg-slate-800">
+				<svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 rounded" viewBox="0 0 128 128">
+					<rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
+					<path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
+				</svg>
+				<h1 class="text-white/60 font-semibold">TypeScript</h1>
+			</div>
+			<div class="p-3 flex items-center gap-2 rounded-xl bg-slate-800">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="flex-shrink-0 h-5 w-5">
+					<path d="M256 144.03l-55.49-96.11h-79.43L256 281.61 390.92 47.92h-79.43L256 144.03z" fill="#35495E"></path>
+					<path d="M409.4 47.92L256 313.61 102.6 47.92H15.74L256 464.08 496.26 47.92H409.4z" fill="#41B883"></path>
+				</svg>
+				<h1 class="text-white/60 font-semibold">Vue</h1>
+			</div>
+			<div class="p-3 flex items-center gap-2 rounded-xl bg-slate-800">
+				<svg class="flex-shrink-0 h-5 w-5" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M55.7498 27.1551C52.5277 21.615 44.4723 21.6149 41.2502 27.1551L6.13404 87.5346C2.91191 93.0748 6.93956 100 13.3838 100H40.7975C38.0438 97.5934 37.0241 93.4303 39.1079 89.8584L65.7033 44.2694L55.7498 27.1551Z" fill="#80EEC0"></path>
+					<path d="M78.0002 40.3997C80.6668 35.8668 87.3332 35.8668 89.9998 40.3997L119.061 89.801C121.728 94.3339 118.395 100 113.062 100H54.9383C49.6052 100 46.2719 94.3339 48.9385 89.801L78.0002 40.3997Z" fill="#00DC82"></path>
+				</svg>
+				<h1 class="text-white/60 font-semibold">NuxtJS</h1>
+			</div>
+			<div class="p-3 flex items-center gap-2 rounded-xl bg-slate-800">
+				<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M6.333 9.933C7.088 6.911 8.978 5.4 12 5.4c4.533 0 5.1 3.4 7.367 3.967 1.511.377 2.833-.189 3.966-1.7-.755 3.022-2.644 4.533-5.666 4.533-4.534 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.967 1.7zm-5.666 6.8C1.422 13.711 3.31 12.2 6.333 12.2c4.534 0 5.1 3.4 7.367 3.967 1.51.377 2.833-.19 3.967-1.7C16.91 17.489 15.022 19 12 19c-4.533 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.966 1.7z" fill="url(#prefix__paint0_linear)"></path>
+					<defs>
+						<linearGradient id="prefix__paint0_linear" x1=".667" y1="-6.689" x2="23.333" y2="31.089" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#2383AE"></stop>
+							<stop offset="1" stop-color="#6DD7B9"></stop>
+						</linearGradient>
+					</defs>
+				</svg>
+				<h1 class="text-white/60 font-semibold">TailwindCSS</h1>
+			</div>
+			<div class="p-3 flex items-center gap-2 rounded-xl bg-slate-800">
+				<svg fill="#9ce6f4" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5" viewBox="0 0 22 24">
+					<path d="m7.827 5.156c-.6-.127-1.288-.2-1.994-.2-.752 0-1.486.083-2.191.24l.067-.012c-1.056.208-1.935.838-2.471 1.702l-.009.016c-.289.486-.46 1.071-.46 1.696 0 .176.014.349.04.518l-.002-.019c.14.968.462 1.837.931 2.608l-.017-.03c.032.05.073.091.121.121l.002.001c.047.026.103.041.162.041h.016-.001c.081-.003.154-.039.205-.095.057-.051.093-.123.095-.204 0-.002 0-.003 0-.005 0-.032-.005-.063-.014-.092l.001.002c-.008-.02-.013-.043-.014-.068-.41-.657-.707-1.429-.841-2.255l-.005-.036c-.023-.137-.037-.295-.037-.456 0-.514.136-.996.374-1.412l-.007.014c.494-.75 1.269-1.28 2.172-1.443l.02-.003c.56-.122 1.202-.192 1.861-.192s1.302.07 1.921.203l-.06-.011h.004c.014 0 .027.005.037.014l.014.014h.006c.089 0 .168-.036.226-.095.059-.058.095-.139.095-.228 0-.002 0-.003 0-.004 0-.005 0-.011 0-.017 0-.076-.026-.146-.069-.202l.001.001c-.045-.053-.106-.091-.175-.108h-.002zm-4.473 8.727c.683.719 1.404 1.383 2.166 1.999l.042.033c.726.587 1.536 1.15 2.386 1.653l.094.052c.983.57 2.135 1.112 3.335 1.557l.159.052c.946.362 2.061.661 3.214.846l.099.013c.491.083 1.056.13 1.632.13.44 0 .873-.028 1.298-.081l-.051.005c.83-.095 1.579-.372 2.229-.79l-.021.012c.036-.036.067-.076.094-.12l.002-.003c.026-.042.041-.093.041-.147 0-.001 0-.002 0-.002 0-.001 0-.003 0-.004 0-.089-.036-.17-.095-.228-.058-.059-.139-.095-.228-.095-.002 0-.003 0-.004 0-.03.004-.057.013-.081.028l.001-.001c-.031.015-.057.033-.08.055-.585.373-1.283.622-2.032.694l-.019.001c-.319.037-.689.058-1.063.058-.578 0-1.145-.05-1.695-.146l.059.008c-1.181-.198-2.226-.482-3.227-.857l.118.039c-1.251-.457-2.321-.977-3.329-1.588l.084.047c-.952-.547-1.767-1.102-2.537-1.712l.042.032c-.784-.62-1.484-1.268-2.13-1.966l-.011-.012c-.034-.034-.075-.061-.12-.079l-.002-.001c-.036-.016-.078-.026-.122-.027h-.001c-.001 0-.003 0-.004 0-.089 0-.17.036-.228.095-.059.058-.095.139-.095.228v.004c0 .04.01.077.028.11l-.001-.001zm15.792-.409c.902-.98 1.602-2.16 2.027-3.465l.019-.067c.13-.365.205-.787.205-1.226 0-.655-.167-1.271-.46-1.808l.01.02c-.384-.649-.956-1.151-1.641-1.437l-.023-.008c-.773-.328-1.672-.518-2.615-.518-.011 0-.022 0-.032 0h.002c-.003 0-.007 0-.011 0-.083 0-.157.037-.207.095-.05.059-.08.137-.08.221v.012-.001.011c0 .084.03.161.081.221v-.001c.05.059.124.095.207.095h.012-.001c.05-.002.11-.002.169-.002.784 0 1.533.156 2.215.439l-.038-.014c.594.246 1.079.656 1.411 1.174l.007.012c.221.432.351.943.351 1.483 0 .407-.074.797-.208 1.158l.007-.023c-.414 1.247-1.053 2.32-1.874 3.223l.006-.007-.054.109c-.017.032-.027.069-.027.109v.004c0 .089.036.17.095.228.058.059.139.095.228.095h.004.008c.048 0 .092-.015.129-.041h-.001c.032-.024.067-.047.105-.066l.004-.002zm-5.264-8.208c-1.193.283-2.213.615-3.194 1.019l.14-.051c-1.082.44-1.988.893-2.854 1.405l.1-.055c-1.192.689-2.223 1.424-3.176 2.245l.027-.022c-.876.747-1.654 1.56-2.345 2.443l-.028.037c-.573.725-1.056 1.558-1.409 2.456l-.023.066c-.214.519-.339 1.123-.339 1.755 0 .209.014.415.04.616l-.003-.024c.019.075.057.14.109.191.053.05.124.08.203.08h.017-.001.006c.089 0 .169-.036.227-.094.059-.058.095-.139.095-.228 0-.002 0-.003 0-.004v-.054c-.016-.139-.025-.301-.025-.465 0-.595.121-1.162.341-1.677l-.011.028c.357-.897.815-1.672 1.373-2.363l-.013.017c.695-.868 1.446-1.636 2.266-2.325l.025-.02c.899-.762 1.897-1.469 2.955-2.086l.099-.054c.714-.43 1.556-.855 2.429-1.22l.131-.048c.782-.333 1.728-.646 2.702-.886l.134-.028c.115-.022.216-.07.3-.139l-.001.001c.05-.053.08-.124.08-.203 0-.006 0-.011 0-.017v.001c-.003-.081-.039-.154-.095-.205-.051-.057-.123-.093-.204-.095h-.08zm-7.609 13.876c.461 1.38 1.169 2.567 2.08 3.567l-.007-.008c.668.769 1.637 1.262 2.722 1.295h.006c.783-.008 1.504-.273 2.081-.715l-.008.006c.708-.537 1.292-1.198 1.729-1.954l.017-.032c.014-.026.028-.058.039-.09l.002-.005c.009-.027.014-.058.014-.09 0-.002 0-.004 0-.006 0-.001 0-.003 0-.004 0-.089-.036-.17-.095-.228-.058-.059-.139-.095-.228-.095-.001 0-.003 0-.004 0-.001 0-.001 0-.002 0-.054 0-.105.015-.149.042l.001-.001c-.05.032-.091.073-.121.121l-.001.002c-.405.704-.92 1.297-1.528 1.777l-.013.01c-.473.374-1.075.603-1.73.614h-.002c-.941-.046-1.77-.49-2.328-1.167l-.004-.006c-.802-.908-1.431-1.991-1.822-3.181l-.018-.065c-.039-.057-.084-.106-.135-.149l-.001-.001c-.05-.042-.115-.068-.186-.068-.002 0-.004 0-.005 0-.081.003-.154.039-.205.095-.059.058-.095.139-.095.228v.004.109zm9.818-.572c.252-.779.471-1.718.615-2.681l.012-.1c.139-.9.218-1.938.218-2.994 0-.012 0-.023 0-.035v.002-.16c0-.023 0-.049 0-.076 0-1.318-.119-2.608-.347-3.859l.02.131c-.218-1.244-.54-2.347-.967-3.396l.04.11c-.381-.959-.863-1.787-1.448-2.53l.016.021c-.476-.623-1.084-1.122-1.784-1.46l-.029-.013c-.017-.017-.04-.027-.066-.027-.001 0-.002 0-.002 0h-.068c-.003 0-.007 0-.011 0-.084 0-.161.03-.221.081h.001c-.059.05-.095.125-.095.207v.012-.001.008c0 .068.02.132.055.185l-.001-.001c.032.05.079.088.134.108l.002.001c.667.328 1.221.795 1.642 1.365l.009.012c.516.68.956 1.458 1.286 2.293l.023.066c.362.89.665 1.938.858 3.023l.014.097c.2 1.072.314 2.305.314 3.565v.08-.004.16.02c0 1.033-.079 2.047-.232 3.036l.014-.11c-.163 1.074-.391 2.021-.69 2.936l.036-.127.027-.08v.027.004c0 .089.036.17.095.228.058.059.139.095.228.095h.004.005c.071 0 .136-.026.187-.068.048-.037.085-.086.108-.142l.001-.002zm6.055-.328c0-.006 0-.013 0-.02 0-.415-.172-.79-.449-1.058-.273-.278-.652-.45-1.072-.45-.012 0-.023 0-.035 0h.002c-.006 0-.012 0-.019 0-.416 0-.791.173-1.058.45-.277.268-.45.643-.45 1.058v.021-.001.032c0 .42.172.8.45 1.072.268.278.643.451 1.059.451h.02-.001.033c.42 0 .799-.172 1.072-.45.277-.273.449-.652.449-1.071 0-.012 0-.025 0-.037v.002zm-.655 0v.02c0 .243-.099.462-.259.62-.158.16-.377.259-.62.259-.007 0-.014 0-.021 0h.001c-.001 0-.002 0-.003 0-.244 0-.464-.099-.624-.259-.168-.156-.273-.377-.273-.624 0-.006 0-.012 0-.017v.001c.001-.247.105-.47.272-.627.157-.168.38-.272.627-.273h.016c.246 0 .468.105.623.272l.001.001c.16.16.259.381.259.625v.002zm-19.937 1.559h.019c.415 0 .79-.172 1.058-.449.278-.273.451-.653.451-1.073 0-.011 0-.023 0-.034v.002c0-.006 0-.012 0-.019 0-.416-.173-.791-.45-1.058-.268-.277-.643-.45-1.058-.45-.007 0-.014 0-.021 0h.001c-.01 0-.021 0-.032 0-.42 0-.8.172-1.072.45-.277.268-.45.643-.45 1.058v.021-.001.032c0 .42.172.8.45 1.072.273.277.652.449 1.071.449h.035zm0-.655c-.006 0-.013 0-.02 0-.243 0-.462-.099-.62-.259-.16-.158-.259-.377-.259-.62 0-.007 0-.014 0-.021v.001c0-.001 0-.002 0-.003 0-.244.099-.464.259-.624.156-.168.377-.273.624-.273h.017-.001c.247.001.47.105.627.272.168.157.272.38.273.627v.016c0 .246-.105.468-.272.623l-.001.001c-.16.158-.379.255-.621.255-.002 0-.004 0-.006 0zm9.52-16.064h.033c.42 0 .799-.172 1.072-.45.278-.268.451-.643.451-1.059 0-.007 0-.013 0-.02v.001c0-.01 0-.021 0-.033 0-.42-.172-.799-.45-1.072-.273-.278-.652-.45-1.072-.45-.012 0-.023 0-.035 0h.002c-.006 0-.012 0-.019 0-.416 0-.791.173-1.058.45-.278.273-.45.652-.45 1.072v.035-.002.019c0 .416.173.791.45 1.058.268.277.643.45 1.058.45h.017-.001zm0-.654c-.002 0-.005 0-.007 0-.238 0-.453-.099-.606-.259-.16-.153-.259-.368-.259-.606 0-.003 0-.005 0-.008 0-.006 0-.013 0-.02 0-.243.099-.462.259-.62.153-.16.368-.259.606-.259h.008.02c.243 0 .462.099.62.259.16.158.259.377.259.62v.021-.001.007c0 .238-.099.453-.259.606-.158.161-.378.26-.621.26-.007 0-.014 0-.02 0h.001zm.246 11.264c-.035.017-.075.027-.118.027-.001 0-.003 0-.004 0h-.125c-.005 0-.011 0-.018 0-.303 0-.577-.125-.773-.327-.202-.196-.327-.47-.327-.774 0-.006 0-.012 0-.019v.001c0-.007 0-.015 0-.023 0-.298.126-.566.327-.754l.001-.001c.198-.194.47-.314.77-.314h.022-.001.021c.262 0 .502.093.69.247l-.002-.001c.188.148.323.355.38.593l.001.007v.011c0 .044.005.087.014.129l-.001-.004c.009.033.014.07.014.109v.021c0 .262-.093.502-.247.69l.001-.002c-.155.192-.371.33-.619.382l-.007.001z"></path>
+				</svg>
+				<h1 class="text-white/60 font-semibold">Electron</h1>
+			</div>
+		</div>
+	</div>
+	<div>
+		<h1 class="text-3xl text-white/70 font-bold">Repositories</h1>
+		<div class="mt-2 grid grid-cols-3 gap-2">
+			<a href="https://github.com/ygtdev/website" target="_blank" class="py-4 px-5 flex flex-col justify-between gap-2 rounded-xl bg-slate-800 transition hover:bg-slate-700/70">
+				<div>
+					<h1 class="text-lg text-zinc-100 font-medium">
+						<span class="text-xl text-[#94a3b8] font-semibold">ygtdev</span>/website
+					</h1>
+					<p class="mt-1 h-12 text-zinc-400">👽 Source codes of my personal website.</p>
+				</div>
+				<div class="flex items-center justify-between">
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="h-3 w-3 rounded-full bg-emerald-600"></span>
+						<h1 class="text-white/50">Vue</h1>
+					</div>
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="text-[#94a3b8]">
+							<i class="fa-solid fa-star"></i>
+						</span>
+						<h1 class="text-white/50">1</h1>
+					</div>
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="text-[#94a3b8]">
+							<i class="fa-solid fa-code-branch"></i>
+						</span>
+						<h1 class="text-white/50">2</h1>
+					</div>
+				</div>
+			</a>
+			<a href="https://github.com/ygtdev/ygtdev" target="_blank" class="py-4 px-5 flex flex-col justify-between gap-0.5 rounded-xl bg-slate-800 transition hover:bg-slate-700/70">
+				<div>
+					<h1 class="text-lg text-zinc-100 font-medium">
+						<span class="text-xl text-[#94a3b8] font-semibold">ygtdev</span>/ygtdev
+					</h1>
+					<p class="mt-1 h-12 text-zinc-400">🥳 Hi there! I'm developer, student & designer.</p>
+				</div>
+			</a>
+			<a href="https://github.com/ygtdev/ygt-warehouse" target="_blank" class="py-4 px-5 flex flex-col justify-between gap-2 rounded-xl bg-slate-800 transition hover:bg-slate-700/70">
+				<div>
+					<h1 class="text-lg text-zinc-100 font-medium">
+						<span class="text-xl text-[#94a3b8] font-semibold">ygtdev</span>/ygt-warehouse
+					</h1>
+					<p class="mt-1 h-12 text-zinc-400">🏠 Warehouse system for QBCore</p>
+				</div>
+				<div class="flex items-center justify-between">
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="h-3 w-3 rounded-full bg-blue-900"></span>
+						<h1 class="text-white/50">Lua</h1>
+					</div>
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="text-[#94a3b8]">
+							<i class="fa-solid fa-star"></i>
+						</span>
+						<h1 class="text-white/50">17</h1>
+					</div>
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="text-[#94a3b8]">
+							<i class="fa-solid fa-code-branch"></i>
+						</span>
+						<h1 class="text-white/50">8</h1>
+					</div>
+				</div>
+			</a>
+			<a href="https://github.com/ygtdev/api" target="_blank" class="py-4 px-5 flex flex-col justify-between gap-2 rounded-xl bg-slate-800 transition hover:bg-slate-700/70">
+				<div>
+					<h1 class="text-lg text-zinc-100 font-medium">
+						<span class="text-xl text-[#94a3b8] font-semibold">ygtdev</span>/api
+					</h1>
+					<p class="mt-1 h-12 text-zinc-400">🔧 Open source API system.</p>
+				</div>
+				<div class="flex items-center justify-between">
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="h-3 w-3 rounded-full bg-yellow-300"></span>
+						<h1 class="text-white/50">JavaScript</h1>
+					</div>
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="text-[#94a3b8]">
+							<i class="fa-solid fa-star"></i>
+						</span>
+						<h1 class="text-white/50">17</h1>
+					</div>
+					<div class="flex items-center gap-2 text-sm font-medium">
+						<span class="text-[#94a3b8]">
+							<i class="fa-solid fa-code-branch"></i>
+						</span>
+						<h1 class="text-white/50">8</h1>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
 </template>
