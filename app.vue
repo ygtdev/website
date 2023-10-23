@@ -1,12 +1,14 @@
 <template>
     <div>
-        <NuxtPage />
+        <NuxtLoadingIndicator color="#22c55e" />
+        <NuxtLayout>
+            <NuxtPage />
+        </NuxtLayout>
     </div>
 </template>
 
 <style>
 body {
-    font-family: 'Chakra Petch', sans-serif;
-    background-color: #0f172a;
+    @apply font-sans bg-slate-200 dark:bg-slate-900;
 }
 </style>
