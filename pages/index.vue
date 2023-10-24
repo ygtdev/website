@@ -12,23 +12,30 @@
                     href="https://github.com/ygtdev"
                     target="_blank"
                     class="text-slate-700 dark:text-slate-400 transition hover:!text-green-500"
-                    ><span><i class="fa-brands fa-github"></i></span></a
-                ><a
+                >
+                    <Icon name="line-md:github" />
+                </a>
+                <a
                     href="https://instagram.com/gursesyigitt/"
                     target="_blank"
                     class="text-slate-700 dark:text-slate-400 transition hover:!text-green-500"
-                    ><span><i class="fa-brands fa-instagram"></i></span></a
-                ><a
-                    href="https://twitter.com/yigitgurses2012"
+                >
+                    <Icon name="line-md:instagram" />
+                </a>
+                <a
+                    href="https://x.com/yigitgurses2012"
                     target="_blank"
                     class="text-slate-700 dark:text-slate-400 transition hover:!text-green-500"
-                    ><span><i class="fa-brands fa-twitter"></i></span></a
-                ><a
+                >
+                    <Icon name="line-md:twitter-x" />
+                </a>
+                <a
                     href="https://linkedin.com/in/yiğit-gürses-b7b486257/"
                     target="_blank"
                     class="text-slate-700 dark:text-slate-400 transition hover:!text-green-500"
-                    ><span><i class="fa-brands fa-linkedin"></i></span
-                ></a>
+                >
+                    <Icon name="line-md:linkedin" />
+                </a>
             </div>
         </div>
     </div>

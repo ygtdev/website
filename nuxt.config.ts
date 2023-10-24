@@ -7,10 +7,6 @@ export default defineNuxtConfig({
             viewport: 'width=device-width, initial-scale=1',
             link: [
                 {
-                    rel: 'stylesheet',
-                    href: 'https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css'
-                },
-                {
                     rel: 'preconnect',
                     href: 'https://fonts.googleapis.com'
                 },
@@ -33,6 +29,8 @@ export default defineNuxtConfig({
             {
                 classSuffix: ''
             }
-        ]
+        ],
+        'nuxt-icon',
+        '@vueuse/nuxt'
     ]
 })

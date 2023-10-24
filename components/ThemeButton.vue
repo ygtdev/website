@@ -1,19 +1,21 @@
 <template>
-    <div class="fixed bottom-8 left-8">
-        <button
-            @click="toggleTheme"
-            class="h-12 w-12 text-2xl text-slate-900 dark:text-slate-200 rounded-full transition hover:!text-green-500"
-        >
-            <i
-                v-if="colorMode.preference === 'light'"
-                class="fa-duotone fa-sun-bright"
-            ></i>
-            <i
-                v-else-if="colorMode.preference === 'dark'"
-                class="fa-duotone fa-moon-stars"
-            ></i>
-        </button>
-    </div>
+    <ClientOnly>
+        <div class="fixed bottom-8 left-8">
+            <button
+                @click="toggleTheme"
+                class="h-12 w-12 text-2xl text-slate-700 dark:text-slate-400 rounded-full transition hover:!text-green-500"
+            >
+                <Icon
+                    v-if="colorMode.preference === 'light'"
+                    name="line-md:sunny-filled"
+                />
+                <Icon
+                    v-else-if="colorMode.preference === 'dark'"
+                    name="line-md:moon-filled"
+                />
+            </button>
+        </div>
+    </ClientOnly>
 </template>
 
 <script lang="ts" setup>
